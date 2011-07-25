@@ -10,3 +10,6 @@
 [submodule "_oh-my-zsh"]
 	path = _oh-my-zsh
 	url = git://github.com/robbyrussell/oh-my-zsh.git
+[submodule "_vim/bundle/taskpaper"]
+	path = _vim/bundle/taskpaper
+	url = git://github.com/davidoc/taskpaper.vim.git
