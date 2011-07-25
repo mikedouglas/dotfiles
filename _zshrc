@@ -9,16 +9,17 @@ plugins=(git ruby brew osx vagrant)
 
 source $ZSH/oh-my-zsh.sh
 
-# Customize to your needs...
+# Exports...
+export EDITOR=vim
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:$HOME/.cabal/bin
+export PAGER=less
 
 # enable gnu coreutils
 source /usr/local/Cellar/coreutils/8.12/aliases
 export LS_OPTIONS='--color=auto'
 eval `dircolors ~/.dircolors`
 
-alias ls='gls $LS_OPTIONS -hF'
-alias ll='gls $LS_OPTIONS -lhF'
-alias l='gls $LS_OPTIONS -lAhF'
+# enable aliases
+source ~/.zsh_aliases
 
 [[ -s "/Users/mjd/.rvm/scripts/rvm" ]] && source "/Users/mjd/.rvm/scripts/rvm"
