@@ -13,3 +13,6 @@
 [submodule "_vim/bundle/taskpaper"]
 	path = _vim/bundle/taskpaper
 	url = git://github.com/davidoc/taskpaper.vim.git
+[submodule "_vim/bundle/vim-align"]
+	path = _vim/bundle/vim-align
+	url = git://github.com/iwata/vim-align.git
