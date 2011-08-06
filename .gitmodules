@@ -16,3 +16,6 @@
 [submodule "_vim/bundle/vim-align"]
 	path = _vim/bundle/vim-align
 	url = git://github.com/iwata/vim-align.git
+[submodule "_vim/bundle/rainbow-parens"]
+	path = _vim/bundle/rainbow-parens
+	url = git://github.com/roman/rainbow.git

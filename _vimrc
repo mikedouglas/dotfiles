@@ -53,8 +53,13 @@ endfunction
 au BufRead,BufNewFile *.txt call s:setupWrapping()
 au BufRead,BufNewFile *.{markdown,md,mdown,mkd,mknd} call s:setupMarkdown()
 
+" handle json files as javascript
+autocmd BufNewFile,BufRead *.json set filetype=javascript
+
 " make Python follow PEP8 ( http://www.python.org/dev/peps/pep-0008/ )
 au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
+
+map <leader>R :call rainbow_parentheses#Toggle()<CR>
 
 set colorcolumn =+1
 
