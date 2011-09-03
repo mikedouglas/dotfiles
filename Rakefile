@@ -1,14 +1,18 @@
+# encoding: UTF-8
 require 'rake'
 
 task :install do
-  files = Dir['_*']
+  files = Dir['*/**.symlink']
 
   files.each do |file|
-    file =~ /_(.+)/
+    file =~ /\/(.+)\.symlink/
     target = "#{ENV["HOME"]}/.#{$1}"
 
     # TODO: allow an option to overwrite file
-    `ln -s "$PWD/#{file}" "#{target}"` unless File.exists?(target)
+    unless File.exists? target
+      `ln -s "$PWD/#{file}" "#{target}"`
+      puts "#{file} → #{target}"
+    end
   end
 end
 
