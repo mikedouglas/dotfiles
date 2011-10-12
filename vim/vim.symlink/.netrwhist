@@ -1,5 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/Users/mjd/Dropbox/Projects/conspiracy/lib'
-let g:netrw_dirhist_2='/Users/mjd/Dropbox/Projects/conspiracy/lib/scheme'
-let g:netrw_dirhist_3='/Users/mjd/Dropbox/Projects/bamboo/lib/bamboo'
