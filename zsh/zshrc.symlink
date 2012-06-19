@@ -16,7 +16,7 @@ export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X1
 export PAGER=less
 
 # enable gnu coreutils
-source /usr/local/Cellar/coreutils/8.12/aliases
+export PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
 export LS_OPTIONS='--color=auto'
 eval `dircolors ~/.dircolors`
 
