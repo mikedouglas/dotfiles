@@ -26,12 +26,13 @@ set directory=~/.vim/backup
 
 " setup pathogen
 filetype plugin indent on
-call pathogen#runtime_append_all_bundles()
+call pathogen#infect()
+call pathogen#helptags()
 
 " enable solarized
 syntax enable
 set background=dark
-colorscheme solarized
+colorscheme Tomorrow-Night-Eighties "solarized
 
 " highlight the current line
 set cursorline
