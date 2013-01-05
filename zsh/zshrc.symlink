@@ -6,7 +6,7 @@ DOTFILES=$HOME/.dotfiles
 ZSH_THEME="gozilla"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-plugins=(ruby brew osx vagrant)
+plugins=(ruby brew osx vagrant fasd gem rbenv)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -17,8 +17,9 @@ export PAGER=less
 
 # enable gnu coreutils
 export PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
+export MANPATH=$(brew --prefix coreutils)/libexec/gnuman:$MANPATH
 export LS_OPTIONS='--color=auto'
-eval `dircolors ~/.dircolors`
+eval `gdircolors ~/.dircolors`
 
 # load dotfiles
 for config_file ($DOTFILES/**/*.zsh) source $config_file
